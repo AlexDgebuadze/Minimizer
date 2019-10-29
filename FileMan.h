@@ -68,23 +68,23 @@ std::vector<std::map<std::string,std::string>> FileManip(std::vector<std::string
             
         } 
              std::cout<<code<<std::endl;
-//            ifs.close();
-//            bool check;
-//             for(int k=0;k<code.length();k++){
-//                 
-//             if((int)code.at(k)==33 || ((int)code.at(k)>34 && (int)code.at(k)<46) || (int)code.at(k)==47 || ((int)code.at(k)>57 && (int)code.at(k)<65) || ((int)code.at(k)>90 && (int)code.at(k)<97) || ((int)code.at(k)>122 && (int)code.at(k)<=126)) {
-//                 check=1;
-//             }
-//             if((int)code.at(k)==32 && check){
-//                 while((int)code.at(k)==32 && k < code.length()){
-//                    
-//                 code.at(k) = '\0'; 
-//                 k++;
-//                 }
-//                 
-//                 check = 0;
-//             }
-//        }
+            ifs.close();
+            bool check;
+             for(int k=0;k<code.length();k++){
+                 
+             if((int)code.at(k)==33 || ((int)code.at(k)>34 && (int)code.at(k)<46) || (int)code.at(k)==47 || ((int)code.at(k)>57 && (int)code.at(k)<65) || ((int)code.at(k)>90 && (int)code.at(k)<97) || ((int)code.at(k)>122 && (int)code.at(k)<=126)) {
+                 check=1;
+             }
+             if((int)code.at(k)==32 && check){
+                 while((int)code.at(k)==32 && k < code.length()-1){
+                    
+                 code.at(k) = '\0'; 
+                 k++;
+                 }
+                 
+                 check = 0;
+             }
+        }
           //   std::cout<<code<<std::endl;
             code.erase(std::remove(code.begin(), code.end(), '\0'), code.end());  
           //   std::cout<<code<<std::endl;

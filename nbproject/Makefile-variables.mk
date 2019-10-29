@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=minimizecode
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/minimizecode
+CND_ARTIFACT_NAME_Debug=minimizer
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/minimizer
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=minimizecode.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/minimizecode.tar
+CND_PACKAGE_NAME_Debug=minimizer.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/minimizer.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=minimizecode
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/minimizecode
+CND_ARTIFACT_NAME_Release=minimizer
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/minimizer
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=minimizecode.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/minimizecode.tar
+CND_PACKAGE_NAME_Release=minimizer.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/minimizer.tar
 #
 # include compiler specific variables
 #

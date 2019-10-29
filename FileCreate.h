@@ -22,8 +22,21 @@
 #include <unistd.h>
 #include <map>
 
-void DoIt(std::vector<std::map<std::string,std::string>>List,std::string Dest){
-    
+
+std::string SplitFilename (const std::string& str)
+{
+  std::cout << "Splitting: " << str << '\n';
+  auto found = str.find_last_of("/\\");
+ // std::cout << " path: " << str.substr(0,found) << '\n';
+ // std::cout << " file: " << str.substr(found+1) << '\n';
+  return str.substr(found+1);
+}
+
+
+
+
+
+void DoIt(const std::vector<std::map<std::string,std::string>>List,const std::string Dest){
     
   const int dir_err = Dest.length()>0 ? mkdir((Dest +'/'+ "Your_Files").c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) : -1;
   if (-1 == dir_err){
@@ -33,7 +46,7 @@ void DoIt(std::vector<std::map<std::string,std::string>>List,std::string Dest){
   
     if(!Dest.empty()){ 
     for(int it=0;it<List.size();it++){
-      std::string name = List[it].begin()->first; 
+      std::string name = SplitFilename(List[it].begin()->first);
       std::ofstream ofs = std::ofstream(Dest+ '/' +"Your_Files"+ '/' + name);
       ofs<<std::noskipws<<List[it].begin()->second<<std::endl;
       ofs.close();
@@ -42,6 +55,9 @@ void DoIt(std::vector<std::map<std::string,std::string>>List,std::string Dest){
     }
     
 }
+
+
+
 
 
 

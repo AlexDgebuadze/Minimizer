@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=MinimizeCode
+PROJECTNAME=Minimizer
 
 # Active Configuration
 DEFAULTCONF=Debug
